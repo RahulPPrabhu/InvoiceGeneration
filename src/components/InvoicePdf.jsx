@@ -132,11 +132,6 @@ const InvoicePDF = ({ invoiceData, logo, signature }) => {
                     }, 0).toFixed(2)}</Text>
                 </View>
 
-                <View style={styles.mb10}>
-                    <Text style={styles.bold}>Amount in Words:</Text>
-                    <Text>{invoiceData.amountInWords}</Text>
-                </View>
-
                 <View style={[styles.flexRow, { justifyContent: 'space-between', marginTop: 20 }]}>
                     <Text>Whether tax is payable under reverse charge : {invoiceData.yesorno}</Text>
                     <View style={styles.alignRight}>
